@@ -2,7 +2,7 @@
 .Rhistory
 .RData
 .DS_Store
-.Rproj
+*.Rproj
 *.zip
 household_power_consumption.txt
 *.html
