@@ -3,7 +3,7 @@
 .RData
 .DS_Store
 .Rproj
-.zip
+*.zip
 household_power_consumption.txt
-.html
-.Rmd
+*.html
+*.Rmd
