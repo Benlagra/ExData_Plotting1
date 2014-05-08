@@ -15,6 +15,8 @@ A **requirement** to use these codes is to **first unzip the original data file*
 
 In each of the codes, I read only the necessary rows from the original data as described below. I then subset the resuting reduced data set accoroding to what I need to produce a given plot.
 
+**The backgroup of each of the plots is is set explicitely to `bg = 'transparent'`** as is the case for the illustrative figures contained in the original repository of Prof. Peng.
+
 ### Structure of the original data
 
 The original data provide measurements of electric power consumption in one household with a one-minute sampling rate (thus 1440 measurements per day) over a period of almost 4 years (Between Dec. 2006 to Nov. 2010). Different electrical quantities and some sub-metering values are available.
@@ -58,7 +60,7 @@ It is the structure of the full data which allowed me to do this simple analysis
 
 Different solutions, some with a relative gain of time, have been proposed in the forum [here](https://class.coursera.org/exdata-002/forum/thread?thread_id=19). Some are the same as mine, although I didn't copy them.
 
-Once the reduced data set is read, the Date and Time columns are merged in a single column in `POSIXlt` format. Finally, I subset the reduced data set to the needs of each plot and bind it column-wise the merged Date and Time column . E.g.: in plot 2, I only need the data on the time evolution of the Global Active Power, so I re-asign the original data.frame `data` to include only the datetime column and the column `data$Global_active_power = data[,3]`.
+Once the reduced data set is read, the Date and Time columns are merged in a single column names `datetime` in `POSIXlt` format. Finally, I subset the reduced data set to the needs of each plot and bind it column-wise with `datetime`. E.g.: in plot 2, I only need the data on the time evolution of the Global Active Power, so I re-asign the original data.frame `data` to include only the datetime column and the column `data$Global_active_power = data[,3]`.
 
 
 
