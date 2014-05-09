@@ -15,7 +15,7 @@ A **requirement** to use these codes is to **first unzip the original data file*
 
 In each of the codes, I read only the necessary rows from the original data as described below. I then subset the resulting reduced data set accoroding to what I need to produce a given plot. This is a minor detail though.
 
-**The background of each of the plots is set explicitely to `bg = 'transparent'`** as is the case for the illustrative figures contained in the original repository of Prof. Peng. When a transparent image is overlay on a given background, it seems to have this background color. Hence why the images seem to have a white background on the webpage of the course project.
+**The background of each of the plots is set explicitely to `bg = 'transparent'`** as is the case for the illustrative figures contained in the original repository of Prof. Peng. When a transparent image is overlay on a given background, it seems to have this background color. Hence why the images seem to have a white background on the webpage of the course project. See the final plots in this file below.
 
 ### Structure of the original data
 
